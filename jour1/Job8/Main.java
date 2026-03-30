@@ -1,21 +1,14 @@
 package Job8;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Entre un nombre : ");
+        int factoriel = 1;
 
-        double n = scanner.nextInt();
-        scanner.close();
-
-        double sum = 0;
-        for (int i = 0; i <= n; i++) {
-            sum += Math.pow(i, 3);
+        for (int i = 1; i <= 8; i++) {
+            factoriel *= i;
         }
 
-        System.out.println(sum);
+        System.out.print(factoriel);
     }
 }
