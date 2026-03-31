@@ -10,7 +10,7 @@ public class Toto {
     public static void main(String[] tutu) {
         Toto t1 = new Toto();
         Toto t2 = new Toto();
-        System.out.println("Toto : " + toto); // mettre t1.toto ou t2.toto
+        // System.out.println("Toto : " + toto); // mettre t1.toto ou t2.toto
     }
 }
 
