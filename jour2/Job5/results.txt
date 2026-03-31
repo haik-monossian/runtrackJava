@@ -1,0 +1,2 @@
+Il y a 3 instances de la classe B
+Somme des variables d : 7
