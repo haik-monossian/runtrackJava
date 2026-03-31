@@ -1,0 +1,35 @@
+--- Voiture 1 (Renault) ---
+Marque : Renault
+Date d'achat : 2018
+Prix d'achat : 15000.0
+Prix courant : 7200.0
+Cylindrée : 1.5
+Nombre de portes : 5
+Puissance : 90
+Kilométrage : 60000.0
+
+--- Voiture 2 (Ferrari) ---
+Marque : Ferrari
+Date d'achat : 2022
+Prix d'achat : 250000.0
+Prix courant : 277500.0
+Cylindrée : 4.0
+Nombre de portes : 3
+Puissance : 600
+Kilométrage : 5000.0
+
+--- Avion 1 (HELICES) ---
+Marque : Cessna
+Date d'achat : 2010
+Prix d'achat : 50000.0
+Prix courant : 45000.0
+Type de moteur : HELICES
+Heures de vol : 150.0
+
+--- Avion 2 (REACTION) ---
+Marque : Airbus
+Date d'achat : 2015
+Prix d'achat : 1.0E8
+Prix courant : 8.0E7
+Type de moteur : REACTION
+Heures de vol : 2500.0
