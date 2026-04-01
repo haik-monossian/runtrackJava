@@ -1,0 +1,15 @@
+1. Ce programme ne fonctionne pas comme prévu car la boucle crée explicitement de nouveaux objets de type 
+Forme en appelant new Forme(tabFormes[i]). Même si le tableau contient des instances de Cercle ou de Triangle, 
+cet appel instancie uniquement la classe de base, provoquant une perte du comportement spécifique des 
+sous-classes par "slicing" conceptuel (on ne garde que la partie Forme de l'objet d'origine).
+
+2. Le programme affichera uniquement le message défini dans la méthode dessine() de la classe Forme, 
+répété pour chaque élément de la collection. On verra donc apparaître successivement : 
+"Une forme rouge" puis "Une forme jaune", sans les précisions "toute ronde" ou "toute pointue" qui 
+appartiennent aux méthodes surchargées des classes filles.
+
+3. Pour corriger le code, il faut ajouter une méthode public Forme copie() dans la classe Forme 
+(qui renvoie new Forme(this)) et la surcharger dans Cercle (renvoyant new Cercle(this)) et Triangle 
+(renvoyant new Triangle(this)). Dans la méthode main, il suffit alors de remplacer l'instanciation 
+directe dans la boucle par l'appel formes.add(tabFormes[i].copie()), ce qui permet d'utiliser le 
+polymorphisme pour dupliquer l'objet avec son type réel sans utiliser de test de type.
